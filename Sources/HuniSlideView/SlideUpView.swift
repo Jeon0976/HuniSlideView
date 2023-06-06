@@ -23,14 +23,14 @@ open class SlideUpView: UIView {
     }
     
     // 슬라이드업 애니메이션
-    func slideUp() {
+    open func slideUp() {
         UIView.animate(withDuration: 0.5, animations: {
             self.frame.origin.y = UIScreen.main.bounds.height / 2
         })
     }
     
     // 슬라이드다운 애니메이션
-    func slideDown() {
+    open func slideDown() {
         UIView.animate(withDuration: 0.5, animations: {
             self.frame.origin.y = UIScreen.main.bounds.height
         })
